@@ -1,0 +1,228 @@
+// FONTS
+$font-inter: "Inter", sans-serif;
+
+// COLORS
+$color_brand: #084da8;
+$color_offwhite: #f4f4f4;
+$color_rating_high: #129b1e;
+$color_rating_med: #ea6911;
+$color_rating_low: #ef2525;
+
+// FONT SIZES
+$font_size_small: 0.4rem;
+$font_size_xsmall: 0.8rem;
+$font_size_xxsmall: 1rem;
+$font_size_xxxsmall: 1.2rem;
+$font_size_med: 1.4rem;
+$font_size_xmed: 1.6rem;
+$font_size_xxmed: 2rem;
+$font_size_xxxmed: 2.4rem;
+$font_size_large: 3.2rem;
+$font_size_xlarge: 4.8rem;
+$font_size_xxlarge: 6.4rem;
+$font_size_xxxlarge: 7.4rem;
+
+// BORDER RADIUS
+$border_radius_small: 1rem;
+$border_radius_med: 4rem;
+$border_radius_large: 6rem;
+
+// MISC
+$min_width_wide: 45rem;
+
+// EXTEND
+%flex_complete_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%card {
+  border-radius: $border_radius_small;
+  box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+%rating {
+  border-radius: 100rem;
+  @extend %flex_complete_center;
+  gap: 0.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+// MIXINS
+@mixin rating_color($color: #129b1e) {
+  background-color: $color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: $font-inter;
+}
+
+///////////////
+// REUSABLES //
+///////////////
+
+// HEADINGS
+
+.heading-hero {
+  font-size: $font_size_xxxlarge;
+  font-weight: 600;
+}
+
+.heading-recomm-hosp {
+  font-weight: 400;
+  font-size: $font_size_xxmed;
+}
+
+.heading-hospital-card {
+  margin: 2rem 2.4rem 0 2.4rem;
+  font-weight: 700;
+  font-size: $font_size_xxmed;
+}
+
+// BUTTONS
+
+.btn-hero-search {
+  @extend %flex_complete_center;
+  background-color: $color_brand;
+  border-radius: 100rem;
+  padding: 1.4rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  border: none;
+  color: #fff;
+}
+
+// ICONS
+
+.icon-hero-search {
+  width: $font_size_xmed;
+  height: $font_size_xmed;
+  --ionicon-stroke-width: 6.4rem;
+}
+
+// RATINGS
+
+.rating-recomm-hosp {
+  @extend %rating;
+  font-size: $font_size_xxsmall;
+  padding: 0.4rem 0.8rem;
+}
+
+.rating-high {
+  @include rating_color;
+}
+
+.rating-med {
+  @include rating_color($color: $color_rating_med);
+}
+
+.rating-low {
+  @include rating_color($color: $color_rating_low);
+}
+
+////////////////
+// NAVIGATION //
+////////////////
+
+.main-nav {
+  ul {
+    display: flex;
+    gap: 3.2rem;
+    font-size: $font_size_med;
+    list-style: none;
+    padding: 3.2rem 3.6rem;
+
+    li:first-child {
+      margin-right: auto;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+//////////
+// HERO //
+//////////
+
+.hero {
+  @extend %flex_complete_center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.color-change {
+  color: $color_brand;
+}
+
+.hero-tagline {
+  font-size: $font_size_xxmed;
+}
+
+.hero-searchbox {
+  border-radius: 100rem;
+  background-color: $color_offwhite;
+  padding: 1.4rem 2rem;
+  border: none;
+  transition: all 0.2s;
+  min-width: $min_width_wide;
+  font-size: $font_size_xmed;
+}
+
+.hero-searchbox:focus {
+  outline: none;
+}
+
+///////////////////////////
+// RECOMMENDED HOSPITALS //
+///////////////////////////
+
+.recomm-hosp {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.recomm-hosp-card {
+  @extend %card;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.recomm-hosp-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 3.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.recomm-hosp-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0 2.4rem 0.4rem 2.4rem;
+}
+
+.recomm-hosp-distance {
+  font-size: $font_size_xxxsmall;
+}
+
+.recomm-hosp-img {
+  border-radius: $border_radius_small;
+  width: 100%;
+}

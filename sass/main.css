@@ -1,0 +1,159 @@
+.hero, .btn-hero-search, .rating-recomm-hosp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recomm-hosp-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.rating-recomm-hosp {
+  border-radius: 100rem;
+  gap: 0.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: "Inter", sans-serif;
+}
+
+.heading-hero {
+  font-size: 7.4rem;
+  font-weight: 600;
+}
+
+.heading-recomm-hosp {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.heading-hospital-card {
+  margin: 2rem 2.4rem 0 2.4rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.btn-hero-search {
+  background-color: #0606c9;
+  border-radius: 100rem;
+  padding: 1.4rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  border: none;
+  color: #fff;
+}
+
+.icon-hero-search {
+  width: 1.6rem;
+  height: 1.6rem;
+  --ionicon-stroke-width: 6.4rem;
+}
+
+.rating-recomm-hosp {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.rating-high {
+  background-color: #129b1e;
+}
+
+.rating-med {
+  background-color: #ea6911;
+}
+
+.rating-low {
+  background-color: #ef2525;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.4rem;
+  list-style: none;
+  padding: 3.2rem 3.6rem;
+}
+.main-nav ul li:first-child {
+  margin-right: auto;
+}
+.main-nav ul .nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  flex-direction: column;
+  height: 50vh;
+}
+
+.color-change {
+  color: #0606c9;
+}
+
+.hero-tagline {
+  font-size: 2rem;
+}
+
+.hero-searchbox {
+  border-radius: 100rem;
+  background-color: #f4f4f4;
+  padding: 1.4rem 2rem;
+  border: none;
+  transition: all 0.2s;
+  min-width: 45rem;
+  font-size: 1.6rem;
+}
+
+.hero-searchbox:focus {
+  outline: none;
+}
+
+.recomm-hosp {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.recomm-hosp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.recomm-hosp-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 3.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.recomm-hosp-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0 2.4rem 0.4rem 2.4rem;
+}
+
+.recomm-hosp-distance {
+  font-size: 1.2rem;
+}
+
+.recomm-hosp-img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

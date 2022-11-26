@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="sass/main.css" rel="stylesheet" />
+    <title>Healify</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li class="main-nav-list-item">
+          <a href="#" class="nav-link">&nbsp;</a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="#" class="nav-link">Change City</a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="#" class="nav-link">Help</a>
+        </li>
+        <li class="main-nav-list-item">
+          <a href="#" class="nav-link">Account</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1 class="heading-hero" style="margin-bottom: 0.8rem">
+        <span class="color-change">heal</span>ify
+      </h1>
+      <p class="hero-tagline" style="margin-bottom: 1.6rem">
+        Your <strong>go-to-stop</strong> for all your hospital queries
+      </p>
+      <div style="display: flex; gap: 1.2rem">
+        <input
+          class="hero-searchbox"
+          placeholder="Search for hospitals, clinics, etc..."
+        />
+        <button class="btn-hero-search">
+          <ion-icon name="search-outline" class="icon-hero-search"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <section class="recomm-hosp">
+      <h2 class="heading-recomm-hosp" style="margin-bottom: 3.2rem">
+        Hospitals near you, recommended by us
+      </h2>
+      <div
+        style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2rem"
+      >
+        <figure class="recomm-hosp-card">
+          <h3 class="heading-hospital-card">SDMH Hospital</h3>
+          <div class="recomm-hosp-info">
+            <span class="rating-recomm-hosp rating-high"
+              ><ion-icon name="star" class="icon-recomm-hosp-star"></ion-icon
+              >4.2</span
+            >
+            <span class="recomm-hosp-distance">18.6 km from your location</span>
+          </div>
+          <img
+            src="img/hospital_sdmh.png"
+            class="recomm-hosp-img"
+            alt="SDMH Hospital"
+          />
+        </figure>
+
+        <figure class="recomm-hosp-card">
+          <h3 class="heading-hospital-card">Apex Hospital</h3>
+          <div class="recomm-hosp-info">
+            <span class="rating-recomm-hosp rating-high"
+              ><ion-icon name="star" class="icon-recomm-hosp-star"></ion-icon
+              >4.7</span
+            >
+            <span class="recomm-hosp-distance">27.3 km from your location</span>
+          </div>
+          <img src="img/hospital_apex.png" class="recomm-hosp-img" />
+        </figure>
+
+        <figure class="recomm-hosp-card">
+          <h3 class="heading-hospital-card">Eternal Hospital</h3>
+          <div class="recomm-hosp-info">
+            <span class="rating-recomm-hosp rating-high"
+              ><ion-icon name="star" class="icon-recomm-hosp-star"></ion-icon
+              >4.8</span
+            >
+            <span class="recomm-hosp-distance">30.9 km from your location</span>
+          </div>
+          <img src="img/hospital_eternal.jpg" class="recomm-hosp-img" />
+        </figure>
+
+        <figure class="recomm-hosp-card">
+          <h3 class="heading-hospital-card">Rungta Hospital</h3>
+          <div class="recomm-hosp-info">
+            <span class="rating-recomm-hosp rating-high"
+              ><ion-icon name="star" class="icon-recomm-hosp-star"></ion-icon
+              >4.3</span
+            >
+            <span class="recomm-hosp-distance">39.1 km from your location</span>
+          </div>
+          <img src="img/hospital_rungta.jpg" class="recomm-hosp-img" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
